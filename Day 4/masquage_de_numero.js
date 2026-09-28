@@ -1,9 +1,5 @@
-const str2 = "123456789123456789"
 function mask_str(str)
-{
-    let str1 = ""
-    console.log(str.slice(0, str.length - 4))
-    
+{   
+    return str.slice(-4).padStart(16, '*');
 }
-mask_str(str2)
-console.log(str2)
+console.log(mask_str("1234567891234567"))

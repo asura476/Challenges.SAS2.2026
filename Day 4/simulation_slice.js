@@ -1,13 +1,10 @@
 function extraireChaine(tab, x, y)
 {
     let tab1 = ""
-    for(i = 0; i < tab.length; i++)
+    for(i = x; i < y; i++)
     {
-        if(x)
-        {
-            tab1 = tab[x]
-        }
+        tab1 += tab[i]
     }
     return tab1
 }
-console.log(extraireChaine("Javascript", 0, 4))
+console.log(extraireChaine("Javascript", 1, 3))
